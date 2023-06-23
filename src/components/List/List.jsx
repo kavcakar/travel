@@ -7,11 +7,11 @@ import {
   MenuItem,
   FormControl,
   Select,
-} from "@material-ui/core";
+} from '@material-ui/core';
 
-import PlaceDetails from "../PlaceDetails/PlaceDetails";
+import PlaceDetails from '../PlaceDetails/PlaceDetails';
+import useStyles from "./styles.js";
 
-import useStyles from "./styles";
 const List = () => {
   const classes = useStyles();
   const [type, setType] = useState("restaurants");
