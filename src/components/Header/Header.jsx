@@ -33,4 +33,3 @@ const Header = ({ onPlaceChanged, onLoad }) => {
 };
 
 export default Header;
-

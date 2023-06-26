@@ -5,7 +5,7 @@ import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import Rating from "@material-ui/lab/Rating";
 
 import useStyles from "./styles";
-import LocationOnOutlined from "@material-ui/icons/LocationOnOutlined";
+
 
 const Map = ({setCoordinates,setBounds, coordinates, places, setChildClicked   }) => {
   const classes = useStyles();
@@ -29,7 +29,7 @@ const Map = ({setCoordinates,setBounds, coordinates, places, setChildClicked   }
         }}
         onChildClick={(child) => setChildClicked(child)}
       >
-      {places?.map((place) => (
+      {places.length && places.map((place, i) => (
         <div className={classes.markerContainer}
         lat={Number(place.latitude)}
         lng={Number(place.longitude)}
